@@ -558,6 +558,74 @@ h1 {
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         }
 
+        
+        /* Transform Trading Section */
+        .transform-section {
+            padding: 6rem 0;
+            background-color: var(--panel);
+            position: relative;
+        }
+
+        .transform-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 70%, rgba(59, 175, 218, 0.08) 0%, transparent 70%);
+            z-index: 0;
+        }
+
+        .transform-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .benefit-card {
+            background-color: var(--deep-navy);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(59, 175, 218, 0.1);
+            height: 100%;
+            text-align: center;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(59, 175, 218, 0.3);
+        }
+
+        .benefit-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--green) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: var(--deep-navy);
+        }
+
+        .benefit-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+
+        .benefit-description {
+            color: var(--slate);
+            line-height: 1.7;
+        }
+
+
         /* Responsive Adjustments */
         @media (max-width: 992px) {
             h1 {
@@ -628,11 +696,7 @@ h1 {
                 font-size: 3.2rem;
             }
             
-            .feature-card {
-                padding: 2rem;
-            }
-            
-            .step-card {
+            .feature-card, .step-card, .benefit-card {
                 padding: 2rem;
             }
             
