@@ -44,3 +44,7 @@
             });
         });
    
+
+        // pricing section 
+
+        
