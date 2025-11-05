@@ -859,7 +859,7 @@ h1 {
 /* Pricing Section and Loading Animation */
 
 .pricing-section {
-  /* max-width: 1000px; */
+  /* max-width: 999px; */
   width: 99%;
   text-align: center;
   min-height: 100vh; 
@@ -1267,3 +1267,251 @@ h1 {
     width: 250px;
   }
 }
+
+
+/* Signup Page Styles */
+
+        .auth-container {
+            display: flex;
+            max-width: 1000px;
+            width: 100%;
+            background: var(--panel);
+      
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(59, 175, 218, 0.2);
+        }
+
+        .auth-hero {
+            flex: 1;
+            background: linear-gradient(135deg, var(--navy), var(--deep-navy));
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: var(--cyan);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo i {
+            color: var(--green);
+        }
+
+        .hero-content h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, var(--cyan), var(--green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content p {
+            color: var(--slate);
+            margin-bottom: 2rem;
+        }
+
+        .auth-form {
+            flex: 1;
+            padding: 3rem;
+            background: var(--panel);
+            padding-top: 8rem;
+        }
+
+        .form-header {
+            margin-bottom: 2rem;
+        }
+
+        .form-header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+        }
+
+        .form-header p {
+            color: var(--slate);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1rem;
+            background: var(--navy);
+            border: 1px solid rgba(59, 175, 218, 0.3);
+            border-radius: 6px;
+            color: var(--white);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--cyan);
+            box-shadow: 0 0 0 3px rgba(59, 175, 218, 0.1);
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: var(--slate);
+            cursor: pointer;
+            padding: 0.25rem;
+            border-radius: 4px;
+            transition: color 0.3s ease;
+        }
+
+        .password-toggle:hover {
+            color: var(--cyan);
+        }
+
+        .password-strength {
+            height: 4px;
+            background: var(--navy);
+            border-radius: 2px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+
+        .strength-bar {
+            height: 100%;
+            width: 0%;
+            transition: all 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .strength-text {
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+            color: var(--slate);
+        }
+
+        .form-input.error {
+            border-color: var(--loss-red);
+            box-shadow: 0 0 0 3px rgba(233, 109, 118, 0.1);
+        }
+
+        .error-message {
+            color: var(--loss-red);
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 0.25rem;
+            flex-shrink: 0;
+        }
+
+        .checkbox-group label {
+            color: var(--slate);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .checkbox-group a {
+            color: var(--cyan);
+            text-decoration: none;
+        }
+
+        .checkbox-group a:hover {
+            text-decoration: underline;
+        }
+
+        .signup-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(90deg, var(--cyan), var(--green));
+            color: var(--navy);
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .signup-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 175, 218, 0.3);
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--slate);
+            font-size: 0.9rem;
+        }
+
+        .form-footer a {
+            color: var(--cyan);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .auth-container {
+                flex-direction: column;
+            }
+            
+            .auth-hero {
+                padding: 2rem;
+            }
+            
+            .auth-form {
+                padding: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
